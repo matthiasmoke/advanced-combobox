@@ -11,19 +11,9 @@ Both components are fully responsive and automatically switch between popover (d
 
 ## Installation using the shadcn CLI
 
-To use these components in your project:
-
-1. Add this registry to your shadcn configuration:
-
 ```bash
-npx shadcn@latest add --registry https://matthiasmoke.github.io/advanced-combobox/r/registry.json
-```
-
-2. Add individual components:
-
-```bash
-npx shadcn@latest add combobox
-npx shadcn@latest add combobox-multiselect
+npx shadcn@latest add https://matthiasmoke.github.io/advanced-combobox/r/combobox.json
+npx shadcn@latest add https://matthiasmoke.github.io/advanced-combobox/r/combobox-multiselect.json
 ```
 
 ## API Documentation
