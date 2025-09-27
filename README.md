@@ -9,90 +9,7 @@ A collection of advanced combobox components built with React, TypeScript, and s
 
 Both components are fully responsive and automatically switch between popover (desktop) and drawer (mobile) interfaces.
 
-## Development Setup
-
-### Prerequisites
-
-- Node.js 18+
-- pnpm (recommended) or npm
-
-### Installation
-
-```bash
-pnpm install
-# or
-npm install
-```
-
-### Development
-
-Start the development server:
-
-```bash
-pnpm dev
-# or
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Building for Production
-
-Build the static site:
-
-```bash
-pnpm run export
-# or
-npm run export
-```
-
-This generates a static site in the `out/` directory that can be deployed to any static hosting service.
-
-## Deployment
-
-### GitHub Pages
-
-This project is configured for automatic deployment to GitHub Pages:
-
-1. **Enable GitHub Pages** in your repository settings:
-
-   - Go to Settings → Pages
-   - Source: "GitHub Actions"
-
-2. **Push to main branch** - The GitHub Action will automatically:
-
-   - Build the static site
-   - Deploy to GitHub Pages
-   - Make it available at `https://yourusername.github.io/advanced-combobox`
-
-3. **Manual deployment** (if needed):
-   ```bash
-   pnpm run export
-   # Then upload the contents of the 'out' directory to GitHub Pages
-   ```
-
-### Other Static Hosting
-
-The built site in the `out/` directory can be deployed to any static hosting service:
-
-- Vercel
-- Netlify
-- AWS S3 + CloudFront
-- Any CDN or static hosting provider
-
-### Building the Registry
-
-To build the component registry for distribution:
-
-```bash
-pnpm build
-# or
-npm run build
-```
-
-This will generate the registry files under `public/r/` that can be consumed by the shadcn CLI.
-
-### Using with shadcn CLI
+## Installation using the shadcn CLI
 
 To use these components in your project:
 
@@ -215,22 +132,42 @@ function MyComponent() {
 }
 ```
 
-## Features
+## Development Setup
 
-- **Responsive Design**: Automatically switches between popover (desktop) and drawer (mobile)
-- **Search Functionality**: Built-in search with customizable filtering
-- **Loading States**: Support for loading indicators
-- **Accessibility**: Full ARIA support and keyboard navigation
-- **TypeScript**: Fully typed with comprehensive interfaces
-- **Customizable**: Extensive styling and behavior customization options
+### Prerequisites
 
-## Dependencies
+- Node.js 18+
+- pnpm (recommended) or npm
 
-- React 18+
-- Next.js 14+
-- shadcn/ui components (button, popover, drawer, command)
-- Lucide React (icons)
-- Tailwind CSS
+### Installation
+
+```bash
+pnpm install
+# or
+npm install
+```
+
+### Development
+
+Start the development server:
+
+```bash
+pnpm dev
+# or
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Building the Sample Page and Registry
+
+To build the component registry for distribution:
+
+```bash
+pnpm build
+# or
+npm run build
+```
 
 ## License
 
