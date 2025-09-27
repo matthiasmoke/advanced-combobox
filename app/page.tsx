@@ -2,20 +2,12 @@
 
 import * as React from "react";
 import { useState } from "react";
-import { OpenInV0Button } from "@/components/open-in-v0-button";
 import Combobox from "@/components/combobox";
 import { ComboboxMultiSelect } from "@/components/combobox-multiselect";
 import { ApiDocumentation } from "@/components/api-documentation";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-// Sample data for different use cases
 const countries = [
   { label: "United States", value: "us", suffix: "🇺🇸" },
   { label: "Canada", value: "ca", suffix: "🇨🇦" },
@@ -64,8 +56,6 @@ export default function Home() {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [selectedPriority, setSelectedPriority] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [searchEvents, setSearchEvents] = useState<string[]>([]);
 
   return (
     <div className="max-w-4xl mx-auto flex flex-col min-h-svh px-4 py-8 gap-8">

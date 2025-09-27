@@ -215,7 +215,7 @@ function MyComponent() {
                   <td className="p-2 font-mono">searchPlaceholder</td>
                   <td className="p-2 font-mono">string</td>
                   <td className="p-2">
-                    <Badge variant="outline">"Search options"</Badge>
+                    <Badge variant="outline">Search options</Badge>
                   </td>
                   <td className="p-2">Placeholder for search input</td>
                 </tr>
