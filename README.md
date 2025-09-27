@@ -1,4 +1,4 @@
-# Advanced Combobox Components
+# Responsive Combobox Components
 
 A collection of advanced combobox components built with React, TypeScript, and shadcn/ui. Features responsive design with mobile drawer support, search functionality, and multi-select capabilities.
 

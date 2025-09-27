@@ -61,7 +61,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto flex flex-col min-h-svh px-4 py-8 gap-8">
       <header className="flex flex-col gap-1 text-center">
         <h1 className="text-3xl font-bold tracking-tight">
-          Simplistic Combobox Components
+          Responsive Combobox Components
         </h1>
         <p className="text-muted-foreground">
           Easy to use and customizable combobox components with mobile drawer
