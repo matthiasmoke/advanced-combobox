@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Advanced Combobox Components - React TypeScript UI Library",
+  title: "Responsive Combobox Components",
   description:
     "A collection of combobox components built with React, TypeScript, and shadcn/ui. Features responsive design with mobile drawer support, search functionality, and multi-select capabilities.",
   keywords: [

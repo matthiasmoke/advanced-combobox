@@ -30,7 +30,7 @@ import { useCallback, useMemo, useState } from "react";
 import { useIsMobile } from "@/lib/use-mobile";
 import { cn } from "@/lib/utils";
 
-export type ComboboxMultiSelectProps = {
+export type ComboboxMultiSelectDemoProps = {
   noItemsLabel: string;
   placeholder: string;
   items: ComboboxItem[];
@@ -43,9 +43,10 @@ export type ComboboxMultiSelectProps = {
   initialSearch?: string;
   isLoading?: boolean;
   className?: string;
+  forceMobile?: boolean;
 };
 
-export function ComboboxMultiSelect({
+export function ComboboxMultiSelectDemo({
   items,
   onChange,
   noItemsLabel,
@@ -58,7 +59,8 @@ export function ComboboxMultiSelect({
   readonly,
   searchPlaceholder = "Search options",
   className,
-}: ComboboxMultiSelectProps) {
+  forceMobile = false,
+}: ComboboxMultiSelectDemoProps) {
   const [open, setOpen] = useState(false);
   const [selectedValues, setSelectedValues] = useState<string[]>(
     initialValue || []
@@ -66,6 +68,9 @@ export function ComboboxMultiSelect({
   const [searchValue, setSearchValue] = useState<string>(initialSearch || "");
 
   const isMobile = useIsMobile();
+
+  // Use forceMobile prop to override the actual mobile detection
+  const shouldUseMobile = forceMobile || isMobile;
 
   const toggleSelection = useCallback(
     (itemValue: string) => {
@@ -189,7 +194,7 @@ export function ComboboxMultiSelect({
         {triggerTextContent}
       </span>
       <div className="flex items-center gap-1">
-        {selectedValues.length > 0 && !readonly && (
+        {selectedValues.length > 0 && (
           <div
             className="h-6 w-6 p-0 hover:bg-muted rounded-sm flex items-center justify-center cursor-pointer"
             onClick={clearSelection}
@@ -214,7 +219,7 @@ export function ComboboxMultiSelect({
     </Button>
   );
 
-  if (isMobile) {
+  if (shouldUseMobile) {
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
         <DrawerTrigger asChild>{triggerContent}</DrawerTrigger>
