@@ -16,7 +16,7 @@ To use these components in your project:
 1. Add this registry to your shadcn configuration:
 
 ```bash
-npx shadcn@latest add --registry https://your-domain.com/r/registry.json
+npx shadcn@latest add --registry https://matthiasmoke.github.io/advanced-combobox/r/registry.json
 ```
 
 2. Add individual components:
