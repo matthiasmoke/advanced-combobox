@@ -13,6 +13,9 @@ Both components are fully responsive and automatically switch between popover (d
 
 ```bash
 npx shadcn@latest add https://matthiasmoke.github.io/advanced-combobox/r/combobox.json
+```
+
+```bash
 npx shadcn@latest add https://matthiasmoke.github.io/advanced-combobox/r/combobox-multiselect.json
 ```
 
