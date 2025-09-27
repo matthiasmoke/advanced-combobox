@@ -9,6 +9,8 @@ A collection of advanced combobox components built with React, TypeScript, and s
 
 Both components are fully responsive and automatically switch between popover (desktop) and drawer (mobile) interfaces.
 
+[Check out the Demo here](https://matthiasmoke.github.io/advanced-combobox/)
+
 ## Installation using the shadcn CLI
 
 ```bash
